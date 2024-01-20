@@ -76,10 +76,10 @@ if (categories.length){
 
 
   return (
-    <div className="  bg-slate-800">
+    <div >
       <div className=" min-h-screen">
         <NavBar products={products}/>
-        <div className="w-11/12 sm:w-3/5 max-w-screen-sm mx-auto">
+        <div className="max-w-screen-sm sm:max-w-screen-lg mx-auto">
           <Category setCategories={setCategories} />
           <ProductsForm categories={categories} setProducts={setProducts} />
           <Filter
