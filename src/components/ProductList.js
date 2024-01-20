@@ -14,7 +14,7 @@ const ProductList = ({ products , categories , setProducts }) => {
         return (
           <div
           key={product.id}
-          className="flex items-center justify-between container mx-auto border-2 p-2 rounded-md border-slate-700">
+          className="flex items-center justify-between container mx-auto border-2 p-2 mb-2 rounded-md border-slate-700">
             <span className="text-slate-400">{product.title}</span>
             <div className="flex items-center gap-x-3">
               <span className="text-slate-300">

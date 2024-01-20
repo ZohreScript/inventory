@@ -29,7 +29,7 @@ const Category = ({ setCategories }) => {
     <section>
       <div className={`mb-6 ${isShow ? "" : "hidden"}`} id="category-wrapper">
         <h2 className="text-xl text-slate-200 font-bold">add new category</h2>
-        <form className="container mx-auto bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
+        <form className="w-11/12 sm:w-3/5 mx-auto bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
           <div>
             <label
               htmlFor="category-title"

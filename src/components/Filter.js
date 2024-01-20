@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Category from "./Category";
 
-const Filter = ({onSort, onSearch , sort , searchValue , categories, selectedCategory , onSelectedCategory}) => {
+const Filter = ({onSort, onSearch , sort ,
+     searchValue , categories, selectedCategory
+      , onSelectedCategory}) => {
 
  
   

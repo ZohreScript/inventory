@@ -39,9 +39,11 @@ const filterSelectedCategory=(array)=>{
   if (!selectedCategory) return array;
   return array.filter((item)=> item.categoryid ==  selectedCategory)
 }
+
   const filterSearchTitle = (array) => {
     return array.filter((p) => p.title.toLowerCase().includes(searchValue));
   };
+  
   const sortDate = (array) => {
     let sorttedProducts = [...array];
     return sorttedProducts.sort((a, b) => {
@@ -70,11 +72,14 @@ if (categories.length){
   localStorage.setItem("categories", JSON.stringify(categories));
 }
 },[categories]);
+
+
+
   return (
-    <div className="">
-      <div className="bg-slate-800 min-h-screen">
+    <div className="  bg-slate-800">
+      <div className=" min-h-screen">
         <NavBar products={products}/>
-        <div className="container max-w-screen-sm mx-auto">
+        <div className="w-11/12 sm:w-3/5 max-w-screen-sm mx-auto">
           <Category setCategories={setCategories} />
           <ProductsForm categories={categories} setProducts={setProducts} />
           <Filter

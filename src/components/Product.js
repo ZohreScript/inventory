@@ -27,7 +27,7 @@ const ProductsForm = ({categories,setProducts}) => {
     <div>
       <h2 className="text-xl text-slate-300 font-bold">add new product</h2>
 
-      <form className="container mx-auto bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
+      <form className="w-11/12 sm:w-3/5 mx-auto bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
         <div id="">
           <label htmlFor="product-title" className="block mb-1 text-slate-400">
             عنوان محصول:
@@ -73,17 +73,17 @@ const ProductsForm = ({categories,setProducts}) => {
           onChange={changeHandler}
             name="categoryid"
             id="product-category"
-            className="bg-transparent text-slate-400 rounded-xl w-full rounded-xl border border-slate-500"
+            className="bg-transparent text-slate-400 rounded-xl w-full  border border-slate-500"
           >
             
-            <option class="bg-slate-600 text-slate-300" value="">
+            <option className="bg-slate-600 text-slate-300" value="">
               دسته بندی موردنظررا انتخاب کنید
             </option>
             {categories.map((category)=>{
                 return(
                    
             <option key={category.id} 
-            class="bg-slate-600 text-slate-300"
+            className="bg-slate-600 text-slate-300"
              value={category.id}>
            {category.title}
           </option> 
@@ -93,13 +93,13 @@ const ProductsForm = ({categories,setProducts}) => {
         </div>
 
         <div className="flex items-center justify-between gap-x-4">
-          <button className="flex-1 border border-slate-400 hover:border-slate-500 text-slate-200 rounded-xl py-2">
+          <button className="flex-1 border border-slate-400 hover:border-slate-500 text-slate-200 rounded-xl py-1">
             cancel
           </button>
           <button
           onClick={addNewProduct}
             id="addnewproduct"
-            className="flex-1 bg-slate-500 hover:bg-slate-400 text-slate-200 rounded-xl py-2"
+            className="flex-1 bg-slate-500 hover:bg-slate-400 text-slate-200 rounded-xl py-1"
           >
             add new product
           </button>
